@@ -1,0 +1,8 @@
+name: SingleSuite
+threadCount: 4
+parameters: { n: 42 }
+
+tests:
+  - name: Regression2
+    classes:
+      - tests.booking.BookingTest
