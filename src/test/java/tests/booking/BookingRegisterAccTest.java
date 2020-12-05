@@ -1,11 +1,11 @@
 package tests.booking;
 
 import org.junit.Test;
-import pages.booking.RegisterInBooking;
+import pages.booking.RegisterInBookingPage;
 
 public class BookingRegisterAccTest {
 
-    private RegisterInBooking book = new RegisterInBooking();
+    private RegisterInBookingPage book = new RegisterInBookingPage();
 
     @Test
     public void registerAtBookingTest() {

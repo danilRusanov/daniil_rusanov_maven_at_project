@@ -2,6 +2,8 @@ package drivers;
 
 import org.openqa.selenium.WebDriver;
 
+import java.net.MalformedURLException;
+
 public class Driver {
 
     private static WebDriver webDriver;
@@ -14,7 +16,7 @@ public class Driver {
         Driver.config = config;
     }
 
-    public static WebDriver getWebDriver() {
+    public static WebDriver getWebDriver() throws MalformedURLException {
         if (webDriver == null) {
             webDriver = DriverManager.getDriver(config);
         }

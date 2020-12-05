@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class SearchResult {
+public class SearchResultPage {
 
     WebDriver driver = new ChromeDriver();
 

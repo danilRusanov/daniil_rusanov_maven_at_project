@@ -5,13 +5,14 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 public class VoidCheckGmail {
 
 //    WebDriver driver = new ChromeDriver();
 
-    public void logInGmail(String email, String password) throws InterruptedException {
+    public void logInGmail(String email, String password) throws InterruptedException, MalformedURLException {
         ThreadsDriver.getWebDriver().get("https://accounts.google.com/");
         ThreadsDriver.getWebDriver().manage().window().maximize();
 
@@ -26,7 +27,7 @@ public class VoidCheckGmail {
 
     }
 
-    public void searchLetter(String sender) {
+    public void searchLetter(String sender) throws MalformedURLException {
 
         //div[@data-message-id]//div[@role='button' and @aria-label='Show trimmed content']
 

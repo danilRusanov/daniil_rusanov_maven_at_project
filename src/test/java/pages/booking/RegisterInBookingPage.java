@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class RegisterInBooking {
+public class RegisterInBookingPage {
 
     WebDriver driver = new ChromeDriver();
 
@@ -19,8 +19,6 @@ public class RegisterInBooking {
         driver.findElement(By.id("password")).sendKeys(password);
         driver.findElement(By.id("confirmed_password")).sendKeys(password);
         driver.findElement(By.xpath("//form[contains(@class, 'nw-register')]//button")).click();
-
-
 
     }
 

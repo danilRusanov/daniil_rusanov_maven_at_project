@@ -8,6 +8,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import tests.mail.VoidCreateTrashMailAccTest;
 
+import java.net.MalformedURLException;
+
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
         VoidCreateTrashMailAccTest.class
@@ -15,12 +17,12 @@ import tests.mail.VoidCreateTrashMailAccTest;
 public class JUnitRunner {
 
     @Before
-    public void initDriver() {
+    public void initDriver() throws MalformedURLException {
         ThreadsDriver.getWebDriver().get("");
     }
 
     @After
-    public void closeDriver() {
+    public void closeDriver() throws MalformedURLException {
         ThreadsDriver.getWebDriver().close();
         ThreadsDriver.setThreadLocalWebDriver();
     }

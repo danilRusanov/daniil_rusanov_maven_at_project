@@ -6,6 +6,7 @@ public enum ConfigWebDrivers {
     SAFARY,
     IE,
     OPERA,
-    FF
+    FF,
+    REMOTE
 
 }

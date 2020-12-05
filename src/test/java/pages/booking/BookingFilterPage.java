@@ -7,11 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.MalformedURLException;
 import java.util.Date;
 
-public class BookingFilter {
+public class BookingFilterPage {
 
-    public void filterAtBooking(String city, Date start, Date end, int adults, int children, int rooms) {
+    public void filterAtBooking(String city, Date start, Date end, int adults, int children, int rooms) throws MalformedURLException {
 
         ThreadsDriver.getWebDriver().get("https://www.booking.com/");
         ThreadsDriver.getWebDriver().findElement(By.xpath("//label['sb-destination-label-sr']//input[@type='search']"))
